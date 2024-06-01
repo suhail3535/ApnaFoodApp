@@ -23,32 +23,32 @@ const Bill = () => {
 
   const handleClick = async () => {
     const totalAmount = findTotalAmount();
+alert("working on payment page")
+    // const options = {
+    //   key: "rzp_test_wH1s30kblY4Mzd",
+    //   amount: totalAmount * 100, // Amount in paisa
+    //   currency: "INR",
+    //   name: "Your Company Name",
+    //   description: "Order payment",
+    //   image: "https://your-logo-url.com/logo.png",
+    //   prefill: {
+    //     name: "John Doe",
+    //     email: "john@example.com",
+    //     contact: "9999999999",
+    //   },
+    //   handler: function (response) {
+    //     console.log(response);
+    //     // Handle successful payment
+    //     alert("Payment successful. Payment ID: " + response.razorpay_payment_id);
+    //   }
+    // };
 
-    const options = {
-      key: "rzp_test_wH1s30kblY4Mzd",
-      amount: totalAmount * 100, // Amount in paisa
-      currency: "INR",
-      name: "Your Company Name",
-      description: "Order payment",
-      image: "https://your-logo-url.com/logo.png",
-      prefill: {
-        name: "John Doe",
-        email: "john@example.com",
-        contact: "9999999999",
-      },
-      handler: function (response) {
-        console.log(response);
-        // Handle successful payment
-        alert("Payment successful. Payment ID: " + response.razorpay_payment_id);
-      }
-    };
-
-    try {
-      const razorpayInstance = new window.Razorpay(options);
-      razorpayInstance.open();
-    } catch (error) {
-      console.error("Error initializing Razorpay:", error);
-    }
+    // try {
+    //   const razorpayInstance = new window.Razorpay(options);
+    //   razorpayInstance.open();
+    // } catch (error) {
+    //   console.error("Error initializing Razorpay:", error);
+    // }
   };
 
 

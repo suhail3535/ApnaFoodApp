@@ -78,14 +78,14 @@ const CartItems = () => {
             </span>
             <div className="flex gap-2 mt-2">
               <button
-                className="shadow-lg active:bg-gray-200 hover:bg-gray-100 transition-all bg-white text-blue-500 rounded-xl font-medium p-2 w-fit"
+                className="shadow-lg active:bg-yellow-600 hover:bg-yellow-600 transition-all bg-orange-500 text-black rounded-xl font-medium p-2 w-fit"
                 onClick={() => handleIncrementClick(item.card.info.id)}
               >
                 +
               </button>
               <span className="font-medium text-lg">{item.quantity}</span>
               <button
-                className="shadow-lg active:bg-gray-200 hover:bg-gray-100 transition-all bg-white text-blue-500 rounded-xl font-medium p-2 w-fit"
+                className="shadow-lg active:bg-yellow-600 hover:byellow-600 transition-all bg-orange-500 text-black rounded-xl font-medium p-2 w-fit"
                 onClick={() => handleDecrementClick(item.card.info.id)}
               >
                 -

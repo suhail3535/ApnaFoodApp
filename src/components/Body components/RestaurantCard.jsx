@@ -15,7 +15,7 @@ const RestaurantCard = (props) => {
   } = resData?.info;
   return (
     <Link to={"/restaurant/" + id}>
-      <div className="card w-[21rem] lg:w-72 overflow-hidden flex flex-col gap-3 cursor-pointer transition-all duration-500 hover:scale-95 my-5 rounded-md border-2 border-gray-200 shadow-xl  h-[21rem] bg-slate-50 p-4">
+      <div className="card w-[21rem] lg:w-72 overflow-hidden flex flex-col gap-3 cursor-pointer transition-all duration-500 hover:scale-95 my-5 rounded-md border-2 border-gray-200 shadow-xl  h-[23rem] bg-slate-50 p-4">
         <img
           src={FOOD_IMAGE + cloudinaryImageId}
           className="w-full h-44 rounded-md"

@@ -23,7 +23,7 @@ const Bill = () => {
 
   const handleClick = async () => {
     const totalAmount = findTotalAmount();
-alert("working on payment page")
+alert("working on payment page will updated soon")
     // const options = {
     //   key: "rzp_test_wH1s30kblY4Mzd",
     //   amount: totalAmount * 100, // Amount in paisa
